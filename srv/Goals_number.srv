@@ -1,0 +1,6 @@
+# Request
+int32 input
+---
+# Response
+int32 reached
+int32 cancelled
