@@ -1,4 +1,23 @@
-#! /usr/bin/env python
+"""
+.. module:: client_publisher
+   :platform: Unix
+   :synopsis: Python node that implements an action client, a publisher and a subscriber.
+   .. moduleauthor:: Claudio Demaria (S5433737)
+
+   This node implements an action client to the /reaching_goal topic in order to use a bug_as alghorithm to reach a desired position inside the environment.
+   To do that, this node needs to subscribe to the /odom topic for knowing the robot current position. This node also publishes the current position and velocity 
+   of the robot with a custom topic named /my_pos_vel. 
+
+   Subscribers:
+   /odom
+   /reaching_goal/result  
+
+   Publishers:
+   /my_pos_vel
+
+   Action clients:
+   /reaching_goal
+"""
 
 import rospy
 from geometry_msgs.msg import Point, Pose, Twist
@@ -18,11 +37,17 @@ from assignment_2_2022.msg import My_pos_vel
 # Import my custom service defined in the /srv folder inside the 'assignment_2_2022' package
 from assignment_2_2022.srv import Goals_number, Goals_numberRequest, Goals_numberResponse
 
-# Variable to know if the goal has been reached
 goal_reached = False
+""" Variable to know if the goal has been reached
+"""
 
-# Callback of the subscriber to the \odom topic (and I also publish the custom message inside this callback) 
 def callback_and_publish(msg):
+	"""
+	Callback of the subscriber to the \odom topic (and it also publish the custom message inside this callback) 
+	
+	Args:
+	msg(Pose): the robot's current position
+	"""
 	# Get the position from the msg
 	position_ = msg.pose.pose.position
 	# Get the twist from the msg
@@ -37,6 +62,13 @@ def callback_and_publish(msg):
 	publisher.publish(pos_vel)
 	
 def callback_result(msg):
+	"""
+	Callback of the subscriber to the /reaching_goal/result topic.
+	It set the value of the boolean variable *goal_reached* in order to know that the goal has been reached.
+	
+	Args:
+	msg(PlanningActionResult): the status of the result
+	"""
 	global goal_reached
 	status = msg.status.status
 	# If status = 3, the goal is reached
@@ -44,6 +76,9 @@ def callback_result(msg):
 		goal_reached = True
 		
 def call_custom_server():
+    """
+    Function that calls the custom service for printing the number of goal reached and cancelled.
+    """
     # Wait for the service to become available
     rospy.wait_for_service('goals_number')
     try:
@@ -60,17 +95,27 @@ def call_custom_server():
 		
 
 def target_goal():
-	# We need a flag to move between the following states:
-	# 0 - Robot is stopped and waiting for a target goal;
-	# 1 - Robot is reaching the goal and it can be stopped if the user cancel the goal, or the goal can be reached;
-	# 2 - The goal is canceled by the user;
+	"""
+	Function that manages the phases of the program:
+	State 0 - Robot is stopped and waiting for a target goal;
+	State 1 - Robot is reaching the goal and it can be stopped if the user cancel the goal, or the goal can be reached;
+	State 2 - The goal is canceled by the user or is reached by the robot;
+	"""
+
 	flag = 0
+	"""
+	Flag variable to move between the states of the program.
+	"""
 	
-	# Boolean to print only the first time inside a loop
 	printed = False
+	"""
+	Boolean variable used to print a string only the first time inside a loop.
+	"""
 	
-	# Boolean to know if the goal has been reached
 	global goal_reached
+	"""
+	Boolean variable used to know if the goal has been reached.
+	"""
 	
 	# Messages to print in the different states
 	message_0 = "\n\n Insert the target position.\n Enter 2 number for the x and y value, separated by a coma: [x, y]  "
@@ -147,6 +192,9 @@ def target_goal():
 					os.system("rosnode kill "+ node)
 
 def client():
+	"""
+	Function that creates the action client and calls the function *target_goal* that manages the phases of the program.
+	"""
 	# Create the action client
 	global client
 	client = actionlib.SimpleActionClient('/reaching_goal', assignment_2_2022.msg.PlanningAction)
@@ -157,6 +205,10 @@ def client():
 	target_goal()
 
 if __name__ == '__main__':
+	"""
+	This function initializes the ROS node, a publisher for the custom message /my_pos_vel, and two subscribers: one for the /odom topic and another for the /reaching_goal/result topic.
+	In the end it calls a function that creates an action client for the /reaching_goal topic and calls a function that manages the logic of the program.
+	"""
 	try:
 		# Initialize the rospy node
 		rospy.init_node('client_publisher')

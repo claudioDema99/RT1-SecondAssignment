@@ -1,4 +1,18 @@
-#! /usr/bin/env python
+"""
+.. module:: subscriber
+   :platform: Unix
+   :synopsis: Python node that implements a subscriber.
+   .. moduleauthor:: Claudio Demaria (S5433737)
+
+   This node implements a subscriber to the custom topic /my_pos_vel that prints the distance from the desired position and the average speed of the robot, 
+   using a particular frequency passed as a ROS parameter.
+
+   Parameters:
+   publish_frequency (double)
+
+   Subscribers:
+   /my_pos_vel
+"""
 
 import rospy
 import math
@@ -7,14 +21,25 @@ import time
 # Import my custom message defined in the /msg folder inside the 'assignment_2_2022' package
 from assignment_2_2022.msg import My_pos_vel
 
-# Frequency of the printed information
 freq = rospy.get_param("publish_frequency")
-# Initialize variable to store the distance and the velocity of the robot
+""" Variable to store the frequency of the printed information, passed as a ROS parameter
+"""
 dist = 0
+""" Variable to store the distance between the robot and the desired position
+"""
 vel = 0
+""" Variable to store the current velocity of the robot
+"""
 
 
 def callback(msg):
+	"""
+	Callback of the subscriber to the /my_pos_vel custom topic.
+	It computes the distance between the robot and the desired position and the average speed of the robot.
+	
+	Args:
+	msg(My_pos_vel): two variables for the position of the robot (*x* and *y*) and two for the robot's velocities (*vel_x* and *vel_y*) 
+	"""
 	global dist
 	global vel
 	# Retrieve the desired position
@@ -29,6 +54,9 @@ def callback(msg):
 	vel = math.sqrt(msg.vel_x**2 + msg.vel_y**2)
 	
 def print_message():
+	"""
+	Function that prints the distance from the desired position and the current average speed of the robot.
+	"""
 	global dist
 	global vel
 	# Print the info
@@ -38,6 +66,10 @@ def print_message():
 	
 
 if __name__ == '__main__':
+	"""
+	This function initializes the ROS node and the subscriber to the */my_pos_vel* topic.
+	It also set the ROS rate imported as a ROS parameter, in order to print the information at a given frequency.
+	"""
 	try:
 		# Initialize the rospy node
 		rospy.init_node('subscriber')

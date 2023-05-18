@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir">
+    <compoundname>/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts</compoundname>
+    <innerfile refid="bug__as_8py">bug_as.py</innerfile>
+    <innerfile refid="client__publisher_8py">client_publisher.py</innerfile>
+    <innerfile refid="go__to__point__service_8py">go_to_point_service.py</innerfile>
+    <innerfile refid="service_8py">service.py</innerfile>
+    <innerfile refid="subscriber_8py">subscriber.py</innerfile>
+    <innerfile refid="wall__follow__service_8py">wall_follow_service.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/"/>
+  </compounddef>
+</doxygen>

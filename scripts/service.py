@@ -1,4 +1,17 @@
-#! /usr/bin/env python
+"""
+.. module:: service
+   :platform: Unix
+   :synopsis: Python node that implements a custom service and a subscriber.
+   .. moduleauthor:: Claudio Demaria (S5433737)
+
+   This node implements a custom service that updates counters each time an actionLib goal is reached or cancelled. It subscribes to the /reaching_goal/result topic.
+
+   Subscribers:
+   /reaching_goal/result
+
+   Services:
+   /goals_number
+"""
 
 import rospy
 import assignment_2_2022.msg
@@ -6,12 +19,22 @@ import assignment_2_2022.msg
 # Import my custom service defined in the /srv folder inside the 'assignment_2_2022' package
 from assignment_2_2022.srv import Goals_number, Goals_numberResponse
 
-# Initialize counters for the goals cancelled/reached
 cancelled = 0
+""" Counter variable to store the number of goals cancelled
+"""
 reached = 0
+""" Counter variable to store the number of goals reached
+"""
 
 # Callback for result subscriber
 def callback_result(msg):
+	"""
+	Callback of the subscriber to the /reaching_goal/result topic.
+	It increases the correspondive counters.
+	
+	Args:
+	msg(PlanningActionResult): the status of the result
+	"""
 	global cancelled
 	global reached
 	
@@ -27,6 +50,9 @@ def callback_result(msg):
 		
 # Service function
 def goals(req):
+	"""
+	Service function that prints and returns the number of goals reached and cancelled
+	"""
 	global cancelled
 	global reached
 	
@@ -36,6 +62,10 @@ def goals(req):
 	return Goals_numberResponse(reached, cancelled)
 
 if __name__ == '__main__':
+	"""
+	This function initializes the ROS node and the service *goals_number*.
+	It also subscribes to the /reaching_goal/result topic in order to get the status of the result once a goal has been reached or cancelled.
+	"""
 	try:
 		# Initialize the rospy node
 		rospy.init_node('service')

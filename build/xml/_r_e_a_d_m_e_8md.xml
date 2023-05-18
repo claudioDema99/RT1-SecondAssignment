@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>RT1-SecondAssignment</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Demaria<sp/>Claudio<sp/>(S5433737)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Description</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>this<sp/>assignment,<sp/>we<sp/>are<sp/>going<sp/>to<sp/>use<sp/>**ROS**<sp/>(Robot<sp/>Operating<sp/>System)<sp/>in<sp/>order<sp/>to<sp/>control<sp/>a<sp/>mobile<sp/>robot<sp/>in<sp/>a<sp/>3D<sp/>simulation<sp/>environment<sp/>called<sp/>*Gazebo*.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">It<sp/>was<sp/>provided<sp/>to<sp/>us<sp/>an<sp/>implementation<sp/>of<sp/>an<sp/>action<sp/>server<sp/>that<sp/>moves<sp/>a<sp/>robot<sp/>in<sp/>the<sp/>environment<sp/>by<sp/>implementing<sp/>the<sp/>*bug0*<sp/>algorithm.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">We<sp/>have<sp/>been<sp/>provided<sp/>with<sp/>a<sp/>package<sp/>containing<sp/>basically<sp/>three<sp/>ROS<sp/>nodes:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`bug_as.py`:<sp/>an<sp/>action<sp/>server<sp/>node<sp/>that,<sp/>once<sp/>received<sp/>the<sp/>desired<sp/>position,<sp/>calls<sp/>the<sp/>needed<sp/>services<sp/>to<sp/>bring<sp/>the<sp/>robot<sp/>to<sp/>the<sp/>desired<sp/>position,<sp/>setting<sp/>the<sp/>position<sp/>as<sp/>a<sp/>ROS<sp/>parameter;</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`go_to_point_service.py`<sp/>is<sp/>the<sp/>service<sp/>node<sp/>that,<sp/>when<sp/>called,<sp/>makes<sp/>the<sp/>robot<sp/>move<sp/>toward<sp/>the<sp/>desired<sp/>position,<sp/>retrieved<sp/>from<sp/>the<sp/>ROS<sp/>parameter;</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`wall_follow_service.py`<sp/>is<sp/>the<sp/>service<sp/>node<sp/>that,<sp/>when<sp/>called,<sp/>makes<sp/>the<sp/>robot<sp/>move<sp/>around<sp/>an<sp/>obstacle<sp/>(a<sp/>wall,<sp/>an<sp/>object...);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>order<sp/>to<sp/>control<sp/>the<sp/>robot<sp/>inside<sp/>the<sp/>simulation,<sp/>we<sp/>were<sp/>asked<sp/>to<sp/>implement<sp/>three<sp/>nodes.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">The<sp/>**first<sp/>node**<sp/>should<sp/>allow<sp/>the<sp/>user<sp/>to<sp/>set<sp/>the<sp/>desired<sp/>position<sp/>of<sp/>the<sp/>robot<sp/>inside<sp/>of<sp/>the<sp/>arena<sp/>or<sp/>to<sp/>stop<sp/>the<sp/>robot.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">The<sp/>**second<sp/>node**<sp/>is<sp/>a<sp/>service<sp/>and,<sp/>when<sp/>called,<sp/>should<sp/>print<sp/>the<sp/>number<sp/>of<sp/>positions<sp/>reached<sp/>and<sp/>how<sp/>many<sp/>times<sp/>the<sp/>robot<sp/>has<sp/>been<sp/>stopped.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">The<sp/>**third<sp/>node**<sp/>should<sp/>print<sp/>the<sp/>distance<sp/>of<sp/>the<sp/>robot<sp/>from<sp/>the<sp/>desired<sp/>position<sp/>and<sp/>its<sp/>average<sp/>speed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Logic<sp/>of<sp/>the<sp/>program<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">When<sp/>the<sp/>launch<sp/>file<sp/>is<sp/>executed,<sp/>in<sp/>addition<sp/>to<sp/>*Rviz*<sp/>and<sp/>*Gazebo*,<sp/>three<sp/>more<sp/>screens<sp/>are<sp/>opened:<sp/>one<sp/>showing<sp/>the<sp/>*client_publisher*<sp/>node<sp/>output,<sp/>another<sp/>printing<sp/>the<sp/>*subscriber*<sp/>node<sp/>information,<sp/>and<sp/>the<sp/>last<sp/>printing<sp/>the<sp/>*service*<sp/>node<sp/>information.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">Initially<sp/>in<sp/>the<sp/>*client_publisher*<sp/>window<sp/>(that<sp/>will<sp/>be<sp/>our<sp/>main<sp/>interaction<sp/>window<sp/>with<sp/>the<sp/>program),<sp/>the<sp/>program<sp/>asks<sp/>the<sp/>user<sp/>to<sp/>provide<sp/>a<sp/>set<sp/>of<sp/>coordinates<sp/>(x,y)<sp/>to<sp/>define<sp/>the<sp/>target<sp/>position.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">The<sp/>robot<sp/>starts<sp/>moving,<sp/>and<sp/>while<sp/>the<sp/>robot<sp/>is<sp/>moving<sp/>the<sp/>user<sp/>can<sp/>enter<sp/>a<sp/>`c`<sp/>character,<sp/>in<sp/>order<sp/>to<sp/>cancel<sp/>the<sp/>goal<sp/>position.</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>user<sp/>lets<sp/>the<sp/>robot<sp/>reach<sp/>the<sp/>desired<sp/>position,<sp/>a<sp/>*goal<sp/>position<sp/>reached*<sp/>string<sp/>is<sp/>shown<sp/>and<sp/>on<sp/>the<sp/>*service*<sp/>screen<sp/>are<sp/>printed<sp/>the<sp/>updated<sp/>information<sp/>about<sp/>the<sp/>number<sp/>of<sp/>goals<sp/>reached/canceled.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">At<sp/>this<sp/>point,<sp/>always<sp/>in<sp/>the<sp/>same<sp/>*client_publisher*<sp/>window,<sp/>the<sp/>program<sp/>asks<sp/>if<sp/>the<sp/>robot<sp/>wants<sp/>to<sp/>reach<sp/>another<sp/>position,<sp/>and<sp/>the<sp/>user<sp/>can<sp/>reply<sp/>*yes*,<sp/>or<sp/>*no*<sp/>(Y/n).<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>user<sp/>agrees,<sp/>the<sp/>program<sp/>restarts<sp/>asking<sp/>for<sp/>a<sp/>new<sp/>set<sp/>of<sp/>desired<sp/>coordinates.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">Otherwise,<sp/>the<sp/>program<sp/>kills<sp/>all<sp/>the<sp/>nodes<sp/>and<sp/>prints<sp/>a<sp/>*goodbye<sp/>message*.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>user<sp/>wants<sp/>to<sp/>cancel<sp/>the<sp/>target<sp/>when<sp/>the<sp/>robot<sp/>is<sp/>moving<sp/>toward<sp/>the<sp/>desired<sp/>position,<sp/>the<sp/>user<sp/>can<sp/>enter<sp/>`c`<sp/>and<sp/>the<sp/>robot<sp/>is<sp/>immediately<sp/>stopped,<sp/>a<sp/>*goal<sp/>canceled<sp/>string*<sp/>is<sp/>printed<sp/>and<sp/>on<sp/>the<sp/>*service*<sp/>screen<sp/>are<sp/>showed<sp/>the<sp/>updated<sp/>information<sp/>about<sp/>the<sp/>number<sp/>of<sp/>goals<sp/>reached/canceled.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">During<sp/>all<sp/>these<sp/>steps,<sp/>on<sp/>the<sp/>*subscriber*<sp/>screen<sp/>are<sp/>continuously<sp/>printed<sp/>the<sp/>distance<sp/>between<sp/>the<sp/>robot<sp/>and<sp/>the<sp/>target,<sp/>and<sp/>the<sp/>average<sp/>velocity<sp/>of<sp/>the<sp/>robot,<sp/>at<sp/>the<sp/>frequency<sp/>set<sp/>in<sp/>the<sp/>launch<sp/>file.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">&lt;figure&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;img<sp/>src=&quot;readme_image/arena_view.png&quot;<sp/>alt=&quot;Flowchart&quot;<sp/>style=&quot;width:100%&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/figure&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;br/&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Goodbye<sp/>message<sp/>and<sp/>killing<sp/>all<sp/>nodes**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;figure&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;img<sp/>src=&quot;readme_image/arena_kill.png&quot;<sp/>alt=&quot;Flowchart&quot;<sp/>style=&quot;width:40%&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/figure&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;br/&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>My<sp/>added<sp/>nodes</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`client_publisher.py`:<sp/>this<sp/>node<sp/>implements<sp/>a<sp/>client,<sp/>a<sp/>publisher<sp/>and<sp/>two<sp/>subscribers<sp/>(the<sp/>name<sp/>was<sp/>given<sp/>at<sp/>the<sp/>beginning<sp/>of<sp/>my<sp/>work,<sp/>only<sp/>later<sp/>I<sp/>discover<sp/>that<sp/>the<sp/>node<sp/>would<sp/>also<sp/>be<sp/>a<sp/>subscriber..).<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">We<sp/>have<sp/>to<sp/>publish<sp/>a<sp/>custom<sp/>message<sp/>containing<sp/>the<sp/>robot<sp/>position<sp/>and<sp/>velocity,<sp/>so<sp/>we<sp/>subscribe<sp/>to<sp/>the<sp/>`\odom`<sp/>topic:<sp/>in<sp/>the<sp/>callback,<sp/>we<sp/>calculate<sp/>position<sp/>and<sp/>velocity,<sp/>and<sp/>we<sp/>also<sp/>publish<sp/>the<sp/>custom<sp/>message<sp/>with<sp/>the<sp/>(global)<sp/>publisher.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">All<sp/>the<sp/>logic<sp/>of<sp/>the<sp/>program<sp/>is<sp/>contained<sp/>inside<sp/>the<sp/>*target_goal()*<sp/>function.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">We<sp/>have<sp/>three<sp/>states:<sp/>in<sp/>the<sp/>**first<sp/>state**,<sp/>the<sp/>program<sp/>asks<sp/>the<sp/>user<sp/>to<sp/>provide<sp/>a<sp/>set<sp/>of<sp/>coordinates<sp/>(x,y)<sp/>to<sp/>define<sp/>the<sp/>target<sp/>position,<sp/>and<sp/>send<sp/>the<sp/>goal<sp/>to<sp/>the<sp/>action<sp/>server<sp/>so<sp/>the<sp/>robot<sp/>starts<sp/>moving.<sp/>In<sp/>the<sp/>**second<sp/>state**<sp/>the<sp/>user<sp/>can<sp/>cancel<sp/>the<sp/>goal<sp/>(entering<sp/>a<sp/>`c`<sp/>character)<sp/>or<sp/>let<sp/>the<sp/>robot<sp/>reach<sp/>the<sp/>desired<sp/>position:<sp/>in<sp/>both<sp/>cases,<sp/>the<sp/>custom<sp/>server<sp/>will<sp/>be<sp/>called<sp/>at<sp/>the<sp/>end<sp/>printing<sp/>the<sp/>updated<sp/>number<sp/>of<sp/>goals<sp/>reached/cancelled.<sp/>In<sp/>the<sp/>**third<sp/>state**<sp/>the<sp/>program<sp/>asks<sp/>if<sp/>the<sp/>robot<sp/>wants<sp/>to<sp/>reach<sp/>another<sp/>position:<sp/>if<sp/>the<sp/>user<sp/>wants,<sp/>the<sp/>program<sp/>asks<sp/>for<sp/>another<sp/>set<sp/>of<sp/>coordinates<sp/>to<sp/>reach,<sp/>otherwise<sp/>the<sp/>program<sp/>kills<sp/>all<sp/>the<sp/>nodes<sp/>and<sp/>prints<sp/>a<sp/>*goodbye<sp/>message*.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">In<sp/>order<sp/>to<sp/>know<sp/>if<sp/>the<sp/>robot<sp/>has<sp/>reached<sp/>the<sp/>desired<sp/>position,<sp/>we<sp/>need<sp/>an<sp/>other<sp/>subscriber:<sp/>we<sp/>subscribe<sp/>to<sp/>the<sp/>`reaching_goal\result`<sp/>topic<sp/>of<sp/>the<sp/>action<sp/>server<sp/>and<sp/>we<sp/>manage<sp/>a<sp/>boolean<sp/>flag<sp/>properly<sp/>in<sp/>order<sp/>to<sp/>know<sp/>if<sp/>the<sp/>robot<sp/>has<sp/>reached<sp/>the<sp/>goal.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`subscriber.py`:<sp/>this<sp/>node<sp/>implements<sp/>a<sp/>subscriber<sp/>to<sp/>our<sp/>custom<sp/>message<sp/>and<sp/>in<sp/>the<sp/>callback,<sp/>it<sp/>calculates<sp/>the<sp/>distance<sp/>from<sp/>the<sp/>desired<sp/>position<sp/>and<sp/>the<sp/>average<sp/>speed<sp/>and<sp/>it<sp/>prints<sp/>these<sp/>informations<sp/>at<sp/>an<sp/>established<sp/>frequency,<sp/>given<sp/>as<sp/>a<sp/>paramether<sp/>by<sp/>the<sp/>launch<sp/>file.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`service.py`:<sp/>this<sp/>node<sp/>implements<sp/>a<sp/>custom<sp/>service<sp/>that<sp/>prints<sp/>the<sp/>number<sp/>of<sp/>goals<sp/>reached/cancelled.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">In<sp/>order<sp/>to<sp/>know<sp/>if<sp/>the<sp/>robot<sp/>has<sp/>reached<sp/>the<sp/>goal<sp/>position,<sp/>the<sp/>node<sp/>has<sp/>to<sp/>subscribe<sp/>to<sp/>the<sp/>`reaching_goal\result`<sp/>topic<sp/>of<sp/>the<sp/>action<sp/>server.<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Flowchart<sp/>of<sp/>the<sp/>&apos;client_publisher.py&apos;<sp/>node**</highlight></codeline>
+<codeline><highlight class="normal">&lt;figure&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;img<sp/>src=&quot;readme_image/flowchart.png&quot;<sp/>alt=&quot;Flowchart&quot;<sp/>style=&quot;width:50%&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/figure&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>My<sp/>custom<sp/>message<sp/>and<sp/>service</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">I<sp/>have<sp/>defined<sp/>a<sp/>custom<sp/>message<sp/>for<sp/>the<sp/>`\my_pos_vel`<sp/>topic<sp/>and<sp/>a<sp/>`Goals_number.srv`<sp/>service,<sp/>contained<sp/>respectively<sp/>within<sp/>the<sp/>`\msg`<sp/>and<sp/>`\srv`<sp/>folder.<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Custom<sp/>message**</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>float64<sp/>x</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>float64<sp/>y</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>float64<sp/>vel_x</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>float64<sp/>vel_y</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">**Custom<sp/>service**</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Request</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/>input</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>---</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Response</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/>reached</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/>cancelled</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Install<sp/>and<sp/>run</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First<sp/>of<sp/>all,<sp/>you<sp/>need<sp/>to<sp/>run<sp/>the<sp/>master<sp/>by<sp/>typing:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>roscore</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>install<sp/>the<sp/>module,<sp/>you<sp/>need<sp/>to<sp/>go<sp/>inside<sp/>the<sp/>`src`<sp/>folder<sp/>of<sp/>your<sp/>ROS<sp/>workspace<sp/>and<sp/>run<sp/>the<sp/>following<sp/>command:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>git<sp/>clone<sp/>https://github.com/claudioDema99/RT1-SecondAssignment</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">and<sp/>from<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>your<sp/>ROS<sp/>workspace<sp/>run<sp/>the<sp/>command:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>catkin_make</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>run<sp/>the<sp/>program,<sp/>you<sp/>need<sp/>to<sp/>have<sp/>installed<sp/>in<sp/>your<sp/>system<sp/>the<sp/>program<sp/>**xterm**.<sp/>To<sp/>install<sp/>it,<sp/>run:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sudo<sp/>apt-get<sp/>install<sp/>xterm</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Finally,<sp/>to<sp/>run<sp/>the<sp/>code,<sp/>type<sp/>the<sp/>following<sp/>command:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>roslaunch<sp/>assignment_2_2022<sp/>assignment1.launch</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Possible<sp/>improvements</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>first<sp/>thing<sp/>you<sp/>notice<sp/>when<sp/>running<sp/>the<sp/>program<sp/>is<sp/>that<sp/>when<sp/>a<sp/>desired<sp/>position<sp/>is<sp/>entered,<sp/>it<sp/>is<sp/>not<sp/>clear<sp/>where<sp/>in<sp/>the<sp/>arena<sp/>this<sp/>point<sp/>is:<sp/>we<sp/>can<sp/>simply<sp/>put<sp/>a<sp/>marker<sp/>inside<sp/>the<sp/>arena<sp/>simulation<sp/>in<sp/>order<sp/>to<sp/>make<sp/>this<sp/>clear.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">In<sp/>this<sp/>way<sp/>the<sp/>user<sp/>can<sp/>also<sp/>notice<sp/>if<sp/>the<sp/>entered<sp/>position<sp/>is<sp/>involuntarily<sp/>near<sp/>or<sp/>inside<sp/>a<sp/>wall.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">Another<sp/>possible<sp/>improvement<sp/>is<sp/>modifying<sp/>the<sp/>algorithm<sp/>that<sp/>control<sp/>the<sp/>movement<sp/>of<sp/>the<sp/>robot,<sp/>because<sp/>it<sp/>seems<sp/>to<sp/>be<sp/>very<sp/>basic.<sp/>For<sp/>example,<sp/>if<sp/>the<sp/>robot<sp/>finds<sp/>a<sp/>wall<sp/>while<sp/>moving<sp/>to<sp/>the<sp/>desired<sp/>position,<sp/>it<sp/>overcomes<sp/>it<sp/>always<sp/>going<sp/>around<sp/>it<sp/>clockwise,<sp/>sometimes<sp/>getting<sp/>further<sp/>from<sp/>the<sp/>goal.</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacebug__as" kind="namespace" language="Python">
+    <compoundname>bug_as</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="bug__as_8py_1aae11f9e7d34d042e3b75f990708f30b7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bug_as.srv_client_go_to_point_</definition>
+        <argsstring></argsstring>
+        <name>srv_client_go_to_point_</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="15" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1aaf82618e313f873dcde442872ce41dca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bug_as.srv_client_wall_follower_</definition>
+        <argsstring></argsstring>
+        <name>srv_client_wall_follower_</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="16" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1afc76d5b7eaf5bbc9d952a1424713adc5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bug_as.yaw_</definition>
+        <argsstring></argsstring>
+        <name>yaw_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="17" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1a27d35e323287c67a62f9e49aa85c81c0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bug_as.yaw_error_allowed_</definition>
+        <argsstring></argsstring>
+        <name>yaw_error_allowed_</name>
+        <initializer>=  5 * (math.pi / 180)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="18" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1a499f87dbcadef3fdd8bf1813ff254980" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bug_as.position_</definition>
+        <argsstring></argsstring>
+        <name>position_</name>
+        <initializer>=  Point()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="19" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1a19167a19063724b9c82eb1ec62a73430" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bug_as.pose_</definition>
+        <argsstring></argsstring>
+        <name>pose_</name>
+        <initializer>=  Pose()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="20" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1af85cbf56a31a686cd9c0ca7a925976c6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bug_as.desired_position_</definition>
+        <argsstring></argsstring>
+        <name>desired_position_</name>
+        <initializer>=  Point()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="21" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1a5df7001712850734cef001cf0be212c8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bug_as.z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="22" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1a4c3231dd163d5f4503c5afde05d774e3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bug_as.regions_</definition>
+        <argsstring></argsstring>
+        <name>regions_</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="23" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1ac5e332e5e1e9dec2ab24b79910c923b5" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list bug_as.state_desc_</definition>
+        <argsstring></argsstring>
+        <name>state_desc_</name>
+        <initializer>=  [&apos;Go to point&apos;, &apos;wall following&apos;, &apos;done&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="24" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="bug__as_8py_1abb23e110e8f093c82fe0f79ca0cd399d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bug_as.state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="25" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bug__as_8py_1ab60ee3a18f82901f764c228cab7715a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def bug_as.clbk_odom</definition>
+        <argsstring>(msg)</argsstring>
+        <name>clbk_odom</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="33" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="33" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="bug__as_8py_1a4119d98608166ee0b88e091319a1bc36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def bug_as.clbk_laser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>clbk_laser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="50" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="50" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="bug__as_8py_1a3c7d2081c97d59613bd86cecc92c95aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def bug_as.change_state</definition>
+        <argsstring>(state)</argsstring>
+        <name>change_state</name>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="61" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="61" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="bug__as_8py_1a4cb91dd1a836fdcc1f433b72f9b6ef40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def bug_as.normalize_angle</definition>
+        <argsstring>(angle)</argsstring>
+        <name>normalize_angle</name>
+        <param>
+          <type>angle</type>
+          <defname>angle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="78" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="bug__as_8py_1a2fe7a2b363215b1c6d054e563ff80d46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def bug_as.done</definition>
+        <argsstring>()</argsstring>
+        <name>done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="83" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="83" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="bug__as_8py_1a94385d0a19f35bc8faab7ea1bb12324a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def bug_as.planning</definition>
+        <argsstring>(goal)</argsstring>
+        <name>planning</name>
+        <param>
+          <type>goal</type>
+          <defname>goal</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="90" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="90" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="bug__as_8py_1a9b1d3f586f8d4174c9c2ba2a074a35ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def bug_as.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="159" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" bodystart="159" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/bug_as.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

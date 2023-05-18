@@ -1,6 +1,6 @@
 # Request
-int32 input
+int32 input  # The input value for the service request
 ---
 # Response
-int32 reached
-int32 cancelled
+int32 reached  # The value indicating if the desired condition was reached
+int32 cancelled  # The value indicating if the operation was cancelled
