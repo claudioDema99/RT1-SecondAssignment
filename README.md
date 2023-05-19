@@ -2,6 +2,8 @@
 
 Demaria Claudio (S5433737)
 
+Documentation: file:///home/dema/Documents/GitHub/RT1-SecondAssignment/docs/dir_49e56c817e5e54854c35e136979f97ca.html
+
 ## Description
 
 In this assignment, we are going to use **ROS** (Robot Operating System) in order to control a mobile robot in a 3D simulation environment called *Gazebo*.  
