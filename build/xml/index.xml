@@ -33,24 +33,24 @@
     <member refid="namespaceclient__publisher_1ae8492ebed8728ce3c4be5a715967617c" kind="function"><name>client</name></member>
   </compound>
   <compound refid="namespaceconf" kind="namespace"><name>conf</name>
-    <member refid="docs_2conf_8py_1aa2c6aefbed1597a70cfb45a760e5977c" kind="variable"><name>project</name></member>
-    <member refid="docs_2conf_8py_1ac8ccf456b321bc9052c0691a173b6925" kind="variable"><name>copyright</name></member>
-    <member refid="docs_2conf_8py_1a6d7145a280c30059b454017b266c11c0" kind="variable"><name>author</name></member>
-    <member refid="docs_2conf_8py_1a540efa67c53e84c1c353c1df2e37e39c" kind="variable"><name>extensions</name></member>
-    <member refid="docs_2conf_8py_1af50129dcc1f90655539f025595a3093b" kind="variable"><name>templates_path</name></member>
-    <member refid="docs_2conf_8py_1aa01918cfe75aed3ae059dd96c71c8f08" kind="variable"><name>exclude_patterns</name></member>
-    <member refid="docs_2conf_8py_1a7942a19d324ba7a3ff32140c7a7cbc2f" kind="variable"><name>breathe_projects</name></member>
-    <member refid="docs_2conf_8py_1ae989613d8aad2a443902eec5d7f3ec4f" kind="variable"><name>breathe_default_project</name></member>
-    <member refid="docs_2conf_8py_1a1c121fa952c0cbd7ea367a58d2ad7676" kind="variable"><name>breathe_default_members</name></member>
-    <member refid="docs_2conf_8py_1a549fc8e6c035b539d49accd7c7ab1f0a" kind="variable"><name>highlight_language</name></member>
-    <member refid="docs_2conf_8py_1a1e0ba7f4cb1d50fa831f1236a77d60f6" kind="variable"><name>source_suffix</name></member>
-    <member refid="docs_2conf_8py_1ae22a29d94a222730836db739d6dbd71e" kind="variable"><name>master_doc</name></member>
-    <member refid="docs_2conf_8py_1a7f1b143ff25817758abd21a7db110510" kind="variable"><name>html_theme</name></member>
-    <member refid="docs_2conf_8py_1acb91fefcfd3aa6f3529fa682ab834832" kind="variable"><name>html_static_path</name></member>
-    <member refid="source_2conf_8py_1a332f430461432dc465213f884a1e4967" kind="variable"><name>shell</name></member>
-    <member refid="source_2conf_8py_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
-    <member refid="source_2conf_8py_1a8375f4f963de3ac8026eaa9beced9564" kind="variable"><name>intersphinx_mapping</name></member>
-    <member refid="source_2conf_8py_1a8fe7f0d85f975f4ecba5cb6066959a09" kind="variable"><name>todo_include_todos</name></member>
+    <member refid="conf_8py_1a332f430461432dc465213f884a1e4967" kind="variable"><name>shell</name></member>
+    <member refid="conf_8py_1a45653c983098153b78e33600e39230eb" kind="variable"><name>project</name></member>
+    <member refid="conf_8py_1a33fa97cf51dcb25970fbf53f10159589" kind="variable"><name>copyright</name></member>
+    <member refid="conf_8py_1a637c239d256432248aa8d9f3ab0b8c52" kind="variable"><name>author</name></member>
+    <member refid="conf_8py_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
+    <member refid="conf_8py_1ae475e080536acb271a0a0efe56c3ba42" kind="variable"><name>extensions</name></member>
+    <member refid="conf_8py_1ae850ae634911b713e036b43894fdd525" kind="variable"><name>templates_path</name></member>
+    <member refid="conf_8py_1a7ad48fb6f3e9b129c02346ea0d3527c1" kind="variable"><name>exclude_patterns</name></member>
+    <member refid="conf_8py_1a3117edf4443d9b8c70a9f0f44294ba79" kind="variable"><name>highlight_language</name></member>
+    <member refid="conf_8py_1a10af2a769eb3bd3322e874f677e435b1" kind="variable"><name>source_suffix</name></member>
+    <member refid="conf_8py_1a6fcd7e5236f355b1e1a55f9d95988810" kind="variable"><name>master_doc</name></member>
+    <member refid="conf_8py_1a6c3bfcc1a44546c1c75ce20f55bd0fd6" kind="variable"><name>html_theme</name></member>
+    <member refid="conf_8py_1af4fb5d8851ccaade135c2668dd3ced41" kind="variable"><name>html_static_path</name></member>
+    <member refid="conf_8py_1a8375f4f963de3ac8026eaa9beced9564" kind="variable"><name>intersphinx_mapping</name></member>
+    <member refid="conf_8py_1a8fe7f0d85f975f4ecba5cb6066959a09" kind="variable"><name>todo_include_todos</name></member>
+    <member refid="conf_8py_1acb47d2c0c2904fa7d36b63142533f383" kind="variable"><name>breathe_projects</name></member>
+    <member refid="conf_8py_1a6eba2d2c7ae923054b1c49e686ec89b9" kind="variable"><name>breathe_default_project</name></member>
+    <member refid="conf_8py_1a54585428ce84441199d9dfd7087e2243" kind="variable"><name>breathe_default_members</name></member>
   </compound>
   <compound refid="namespacego__to__point__service" kind="namespace"><name>go_to_point_service</name>
     <member refid="go__to__point__service_8py_1abe657bd9603dc3f58a1956668813514e" kind="variable"><name>active_</name></member>
@@ -115,10 +115,6 @@
     <member refid="wall__follow__service_8py_1a333a30da2a8f24e46f7b900df6624d65" kind="function"><name>follow_the_wall</name></member>
     <member refid="wall__follow__service_8py_1af098a5a5d743dd6860f1403083e4b17d" kind="function"><name>main</name></member>
   </compound>
-  <compound refid="docs_2conf_8py" kind="file"><name>conf.py</name>
-  </compound>
-  <compound refid="source_2conf_8py" kind="file"><name>conf.py</name>
-  </compound>
   <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="bug__as_8py" kind="file"><name>bug_as.py</name>
@@ -133,9 +129,9 @@
   </compound>
   <compound refid="wall__follow__service_8py" kind="file"><name>wall_follow_service.py</name>
   </compound>
-  <compound refid="md__home_dema__documents__git_hub__r_t1__second_assignment__r_e_a_d_m_e" kind="page"><name>md__home_dema_Documents_GitHub_RT1_SecondAssignment_README</name>
+  <compound refid="conf_8py" kind="file"><name>conf.py</name>
   </compound>
-  <compound refid="dir_49e56c817e5e54854c35e136979f97ca" kind="dir"><name>/home/dema/Documents/GitHub/RT1-SecondAssignment/docs</name>
+  <compound refid="md__home_dema__documents__git_hub__r_t1__second_assignment__r_e_a_d_m_e" kind="page"><name>md__home_dema_Documents_GitHub_RT1_SecondAssignment_README</name>
   </compound>
   <compound refid="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir"><name>/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts</name>
   </compound>

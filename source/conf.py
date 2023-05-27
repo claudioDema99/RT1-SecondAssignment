@@ -9,7 +9,6 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
 
 import os
 import subprocess
@@ -22,8 +21,8 @@ subprocess.call('doxygen ../Doxyfile.in', shell=True)
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'RT1-SecondAssignment'
-copyright = '2023, Claudio Demaria (S5433737)'
-author = 'Claudio Demaria (S5433737)'
+copyright = '2023, Claudio Demaria s5433737'
+author = 'Claudio Demaria s5433737'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'
@@ -82,7 +81,7 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 todo_include_todos = True
 # -- Options for breathe
 breathe_projects = {
-"RT1-SecondAssignment": "../build/xml/"
+"turtlebot_controller": "../build/xml/"
 }
-breathe_default_project = "RT1-SecondAssignment"
+breathe_default_project = "turtlebot_controller"
 breathe_default_members = ('members', 'undoc-members')
