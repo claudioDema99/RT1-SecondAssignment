@@ -23,14 +23,14 @@ RT1-SecondAssignment documentation!
 This is the documentation of the RT1-SecondAssignment package!
 RT1-SecondAssignment Module
 ===========================
-.. automodule:: scripts.client_publisher
+.. automodule:: ../scripts.client_publisher
 :members:
 RT1-SecondAssignment Module
 ===========================
-.. automodule:: scripts.service
+.. automodule:: ../scripts.service
 :members:
 RT1-SecondAssignment Module
 ===========================
-.. automodule:: scripts.subscriber
+.. automodule:: ../scripts.subscriber
 :members:
 

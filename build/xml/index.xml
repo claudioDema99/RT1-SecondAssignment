@@ -50,7 +50,7 @@
     <member refid="conf_8py_1a8fe7f0d85f975f4ecba5cb6066959a09" kind="variable"><name>todo_include_todos</name></member>
     <member refid="conf_8py_1acb47d2c0c2904fa7d36b63142533f383" kind="variable"><name>breathe_projects</name></member>
     <member refid="conf_8py_1a6eba2d2c7ae923054b1c49e686ec89b9" kind="variable"><name>breathe_default_project</name></member>
-    <member refid="conf_8py_1a54585428ce84441199d9dfd7087e2243" kind="variable"><name>breathe_default_members</name></member>
+    <member refid="conf_8py_1a2946ea59566a4b5b010b61628349104c" kind="variable"><name>breathe_defaultmembers</name></member>
   </compound>
   <compound refid="namespacego__to__point__service" kind="namespace"><name>go_to_point_service</name>
     <member refid="go__to__point__service_8py_1abe657bd9603dc3f58a1956668813514e" kind="variable"><name>active_</name></member>

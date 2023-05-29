@@ -44,7 +44,7 @@ PROJECT_NUMBER         = 0.1
 # for a project that appears at the top of each page and should give viewer a
 # quick idea about the purpose of the project. Keep the description short.
 
-PROJECT_BRIEF          = "The second assignment of \"Research Track 1\" regards a robot that should reach some desired positions inside a virtual arena, using ROS (Robot Operating System)."
+PROJECT_BRIEF          = "In this assignment, we are going to use **ROS** (Robot Operating System) in order to control a mobile robot in a 3D simulation environment called *Gazebo*."
 
 # With the PROJECT_LOGO tag one can specify a logo or an icon that is included
 # in the documentation. The maximum height of the logo should not exceed 55

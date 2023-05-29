@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="17" column="1" bodyfile="conf.py" bodystart="17" bodyend="-1"/>
+        <location file="conf.py" line="18" column="1" bodyfile="conf.py" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a45653c983098153b78e33600e39230eb" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="23" column="1" bodyfile="conf.py" bodystart="23" bodyend="-1"/>
+        <location file="conf.py" line="24" column="1" bodyfile="conf.py" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a33fa97cf51dcb25970fbf53f10159589" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="24" column="1" bodyfile="conf.py" bodystart="24" bodyend="-1"/>
+        <location file="conf.py" line="25" column="1" bodyfile="conf.py" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a637c239d256432248aa8d9f3ab0b8c52" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="25" column="1" bodyfile="conf.py" bodystart="25" bodyend="-1"/>
+        <location file="conf.py" line="26" column="1" bodyfile="conf.py" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a325dc746d8bf05c54d26351c35a21d90" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="28" column="1" bodyfile="conf.py" bodystart="28" bodyend="-1"/>
+        <location file="conf.py" line="29" column="1" bodyfile="conf.py" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1ae475e080536acb271a0a0efe56c3ba42" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -87,7 +87,7 @@
 &apos;sphinx.ext.ifconfig&apos;,
 &apos;sphinx.ext.viewcode&apos;,
 &apos;sphinx.ext.githubpages&apos;,
-&quot;sphinx.ext.napoleon&quot;,
+&apos;sphinx.ext.napoleon&apos;,
 &apos;sphinx.ext.inheritance_diagram&apos;,
 &apos;breathe&apos;
 ]</initializer>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="36" column="1" bodyfile="conf.py" bodystart="36" bodyend="-1"/>
+        <location file="conf.py" line="37" column="1" bodyfile="conf.py" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1ae850ae634911b713e036b43894fdd525" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="52" column="1" bodyfile="conf.py" bodystart="52" bodyend="-1"/>
+        <location file="conf.py" line="53" column="1" bodyfile="conf.py" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a7ad48fb6f3e9b129c02346ea0d3527c1" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="57" column="1" bodyfile="conf.py" bodystart="57" bodyend="-1"/>
+        <location file="conf.py" line="58" column="1" bodyfile="conf.py" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a3117edf4443d9b8c70a9f0f44294ba79" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="65" column="1" bodyfile="conf.py" bodystart="65" bodyend="-1"/>
+        <location file="conf.py" line="66" column="1" bodyfile="conf.py" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a10af2a769eb3bd3322e874f677e435b1" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="66" column="1" bodyfile="conf.py" bodystart="66" bodyend="-1"/>
+        <location file="conf.py" line="67" column="1" bodyfile="conf.py" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a6fcd7e5236f355b1e1a55f9d95988810" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="67" column="1" bodyfile="conf.py" bodystart="67" bodyend="-1"/>
+        <location file="conf.py" line="68" column="1" bodyfile="conf.py" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a6c3bfcc1a44546c1c75ce20f55bd0fd6" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="68" column="1" bodyfile="conf.py" bodystart="68" bodyend="-1"/>
+        <location file="conf.py" line="69" column="1" bodyfile="conf.py" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1af4fb5d8851ccaade135c2668dd3ced41" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="73" column="1" bodyfile="conf.py" bodystart="73" bodyend="-1"/>
+        <location file="conf.py" line="74" column="1" bodyfile="conf.py" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a8375f4f963de3ac8026eaa9beced9564" prot="public" static="no" mutable="no">
         <type>dictionary</type>
@@ -209,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="78" column="1" bodyfile="conf.py" bodystart="78" bodyend="-1"/>
+        <location file="conf.py" line="81" column="1" bodyfile="conf.py" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a8fe7f0d85f975f4ecba5cb6066959a09" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="81" column="1" bodyfile="conf.py" bodystart="81" bodyend="-1"/>
+        <location file="conf.py" line="86" column="1" bodyfile="conf.py" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1acb47d2c0c2904fa7d36b63142533f383" prot="public" static="no" mutable="no">
         <type>dictionary</type>
@@ -231,7 +231,7 @@
         <argsstring></argsstring>
         <name>breathe_projects</name>
         <initializer>=  {
-&quot;turtlebot_controller&quot;: &quot;../build/xml/&quot;
+	&quot;RT1-SecondAssignment&quot;: &quot;../build/xml&quot;
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -239,27 +239,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="83" column="1" bodyfile="conf.py" bodystart="83" bodyend="-1"/>
+        <location file="conf.py" line="91" column="1" bodyfile="conf.py" bodystart="91" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="conf_8py_1a6eba2d2c7ae923054b1c49e686ec89b9" prot="public" static="no" mutable="no">
         <type>string</type>
         <definition>string conf.breathe_default_project</definition>
         <argsstring></argsstring>
         <name>breathe_default_project</name>
-        <initializer>=  &quot;turtlebot_controller&quot;</initializer>
+        <initializer>=  &quot;RT1-SecondAssignment&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="86" column="1" bodyfile="conf.py" bodystart="86" bodyend="-1"/>
+        <location file="conf.py" line="94" column="1" bodyfile="conf.py" bodystart="94" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="conf_8py_1a54585428ce84441199d9dfd7087e2243" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="conf_8py_1a2946ea59566a4b5b010b61628349104c" prot="public" static="no" mutable="no">
         <type>tuple</type>
-        <definition>tuple conf.breathe_default_members</definition>
+        <definition>tuple conf.breathe_defaultmembers</definition>
         <argsstring></argsstring>
-        <name>breathe_default_members</name>
+        <name>breathe_defaultmembers</name>
         <initializer>=  (&apos;members&apos;, &apos;undoc-members&apos;)</initializer>
         <briefdescription>
         </briefdescription>
@@ -267,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="conf.py" line="87" column="1" bodyfile="conf.py" bodystart="87" bodyend="-1"/>
+        <location file="conf.py" line="95" column="1" bodyfile="conf.py" bodystart="95" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

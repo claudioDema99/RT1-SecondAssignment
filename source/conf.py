@@ -13,7 +13,8 @@
 import os
 import subprocess
 import sys
-sys.path.insert(0, os.path.abspath('./'))
+sys.path.insert(0, os.path.abspath('../'))
+
 subprocess.call('doxygen ../Doxyfile.in', shell=True)
 
 
@@ -43,7 +44,7 @@ extensions = [
 'sphinx.ext.ifconfig',
 'sphinx.ext.viewcode',
 'sphinx.ext.githubpages',
-"sphinx.ext.napoleon",
+'sphinx.ext.napoleon',
 'sphinx.ext.inheritance_diagram',
 'breathe'
 ]
@@ -72,16 +73,23 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# Extension configuration
+# -- Extension configuration -------------------------------------------------
+
 # -- Options for intersphinx extension ---------------------------------------
+
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None}
+
 # -- Options for todo extension ----------------------------------------------
-# If true, `todo` and `todoList` produce output, else they produce nothing.
+
+# If true, 'todo' and 'todoList' produce output, else they produce nothing.
 todo_include_todos = True
+
+
 # -- Options for breathe
+
 breathe_projects = {
-"turtlebot_controller": "../build/xml/"
+	"RT1-SecondAssignment": "../build/xml"
 }
-breathe_default_project = "turtlebot_controller"
-breathe_default_members = ('members', 'undoc-members')
+breathe_default_project = "RT1-SecondAssignment"
+breathe_defaultmembers = ('members', 'undoc-members')
