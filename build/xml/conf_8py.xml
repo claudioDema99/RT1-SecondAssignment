@@ -32,8 +32,8 @@
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal">project<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;RT1-SecondAssignment&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal">copyright<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;2023,<sp/>Claudio<sp/>Demaria<sp/>s5433737&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal">author<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Claudio<sp/>Demaria<sp/>s5433737&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">copyright<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;2023,<sp/>Claudio<sp/>Demaria<sp/>(S5433737)&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">author<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Claudio<sp/>Demaria<sp/>(S5433737)&apos;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">#<sp/>The<sp/>full<sp/>version,<sp/>including<sp/>alpha/beta/rc<sp/>tags</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal">release<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;0.1&apos;</highlight><highlight class="normal"></highlight></codeline>

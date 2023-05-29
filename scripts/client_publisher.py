@@ -32,6 +32,7 @@ import sys
 import select
 import os
 
+
 # Import my custom message defined in the /msg folder inside the 'assignment_2_2022' package
 from assignment_2_2022.msg import My_pos_vel
 # Import my custom service defined in the /srv folder inside the 'assignment_2_2022' package

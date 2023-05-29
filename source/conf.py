@@ -22,8 +22,8 @@ subprocess.call('doxygen ../Doxyfile.in', shell=True)
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'RT1-SecondAssignment'
-copyright = '2023, Claudio Demaria s5433737'
-author = 'Claudio Demaria s5433737'
+copyright = '2023, Claudio Demaria (S5433737)'
+author = 'Claudio Demaria (S5433737)'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'

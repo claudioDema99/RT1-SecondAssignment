@@ -103,10 +103,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>goal_reached</b> = Fa
 <tr class="separator:a9c9449c50b7f94ab60b32e6c7d0969b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">.. module:: client_publisher
-   :platform: Unix
-   :synopsis: Python node that implements an action client, a publisher and a subscriber.
-   .. moduleauthor:: Claudio Demaria (S5433737)
+<div class="textblock"><pre class="fragment">Node: client_publisher
+
+Description: Python node that implements an action client, a publisher and a subscriber.
+
+author: Claudio Demaria (S5433737)
 
    This node implements an action client to the /reaching_goal topic in order to use a bug_as alghorithm to reach a desired position inside the environment.
    To do that, this node needs to subscribe to the /odom topic for knowing the robot current position. This node also publishes the current position and velocity 

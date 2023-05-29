@@ -35,7 +35,7 @@
         <definition>string conf.copyright</definition>
         <argsstring></argsstring>
         <name>copyright</name>
-        <initializer>=  &apos;2023, Claudio Demaria s5433737&apos;</initializer>
+        <initializer>=  &apos;2023, Claudio Demaria (S5433737)&apos;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -49,7 +49,7 @@
         <definition>string conf.author</definition>
         <argsstring></argsstring>
         <name>author</name>
-        <initializer>=  &apos;Claudio Demaria s5433737&apos;</initializer>
+        <initializer>=  &apos;Claudio Demaria (S5433737)&apos;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
