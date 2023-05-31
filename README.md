@@ -4,7 +4,7 @@ Demaria Claudio (S5433737)
 
 ## Documentation
 
-Documentation available at this link: https://claudiodema99.github.io/RT1-SecondAssignment/
+Doxygen documentation available at this link: https://claudiodema99.github.io/RT1-SecondAssignment/
 
 ## Description
 
