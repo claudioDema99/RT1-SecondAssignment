@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="42" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="42" bodyend="-1"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="41" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceclient__publisher_1ab2e2da9c51719d5c8a7d59a7cf5e274d" prot="public" static="no" mutable="no">
         <type></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="219" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="219" bodyend="-1"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="218" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="218" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceclient__publisher_1ad70e45762a19a104352cab94818c513e" prot="public" static="no" mutable="no">
         <type></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="222" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="222" bodyend="-1"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="221" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceclient__publisher_1ad8116ff34f025022c198b378612b68da" prot="public" static="no" mutable="no">
         <type></type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="224" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="224" bodyend="-1"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="223" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="223" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceclient__publisher_1a9c9449c50b7f94ab60b32e6c7d0969b0" prot="public" static="no" mutable="no">
         <type></type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="228" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="228" bodyend="-1"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="227" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="227" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="46" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="46" bodyend="65"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="45" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="45" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="namespaceclient__publisher_1a8e4a5872f4eedfa222cbad5fc36b8c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="66" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="66" bodyend="79"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="65" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="65" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="namespaceclient__publisher_1ae80f02e80012e6bc6612d6299c1f9d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="80" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="80" bodyend="98"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="79" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="79" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="namespaceclient__publisher_1af36ccfd77687c70276db21a02afc9f04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="99" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="99" bodyend="195"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="98" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="98" bodyend="194"/>
       </memberdef>
       <memberdef kind="function" id="namespaceclient__publisher_1ae8492ebed8728ce3c4be5a715967617c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -161,17 +161,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="196" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="196" bodyend="208"/>
+        <location file="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" line="195" column="1" bodyfile="/home/dema/Documents/GitHub/RT1-SecondAssignment/scripts/client_publisher.py" bodystart="195" bodyend="207"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><verbatim>Node: client_publisher
-
-Description: Python node that implements an action client, a publisher and a subscriber.
-
-author: Claudio Demaria (S5433737)
+<para><verbatim>.. module:: client_publisher
+   :platform: Unix
+   :synopsis: Python node that implements an action client, a publisher and a subscriber.
+   .. moduleauthor:: Claudio Demaria (S5433737)
 
    This node implements an action client to the /reaching_goal topic in order to use a bug_as alghorithm to reach a desired position inside the environment.
    To do that, this node needs to subscribe to the /odom topic for knowing the robot current position. This node also publishes the current position and velocity 

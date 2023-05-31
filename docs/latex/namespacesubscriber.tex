@@ -1,0 +1,69 @@
+\hypertarget{namespacesubscriber}{}\doxysection{subscriber Namespace Reference}
+\label{namespacesubscriber}\index{subscriber@{subscriber}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacesubscriber_a73e6c171b5f0a0f02eba4a95f6cb0289}{callback}} (msg)
+\item 
+def \mbox{\hyperlink{namespacesubscriber_ac222f9b0036b7ead9c5346c9b0eafe50}{print\+\_\+message}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacesubscriber_a9ee70a4de873b7faac13a4fac8553644}\label{namespacesubscriber_a9ee70a4de873b7faac13a4fac8553644}} 
+{\bfseries freq} = rospy.\+get\+\_\+param(\char`\"{}publish\+\_\+frequency\char`\"{})
+\item 
+\mbox{\Hypertarget{namespacesubscriber_a3174e2aafc36ee364a263ab1bb9fea73}\label{namespacesubscriber_a3174e2aafc36ee364a263ab1bb9fea73}} 
+int {\bfseries dist} = 0
+\item 
+\mbox{\Hypertarget{namespacesubscriber_acd4f3b7daf135f0807fbf52748a82782}\label{namespacesubscriber_acd4f3b7daf135f0807fbf52748a82782}} 
+int {\bfseries vel} = 0
+\item 
+\mbox{\Hypertarget{namespacesubscriber_a7565ab39a1e98e0ac7fa0b3080670bd2}\label{namespacesubscriber_a7565ab39a1e98e0ac7fa0b3080670bd2}} 
+{\bfseries subscriber} = rospy.\+Subscriber(\char`\"{}/my\+\_\+pos\+\_\+vel\char`\"{}, My\+\_\+pos\+\_\+vel, \mbox{\hyperlink{namespacesubscriber_a73e6c171b5f0a0f02eba4a95f6cb0289}{callback}})
+\item 
+\mbox{\Hypertarget{namespacesubscriber_a5df2fa06ef88b04f9ccadc7c3e25756d}\label{namespacesubscriber_a5df2fa06ef88b04f9ccadc7c3e25756d}} 
+{\bfseries rate} = rospy.\+Rate(freq)
+\item 
+\mbox{\Hypertarget{namespacesubscriber_a310c382f324dc42c68510bd5962cbd76}\label{namespacesubscriber_a310c382f324dc42c68510bd5962cbd76}} 
+{\bfseries file}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: subscriber
+   :platform: Unix
+   :synopsis: Python node that implements a subscriber.
+   .. moduleauthor:: Claudio Demaria (S5433737)
+
+   This node implements a subscriber to the custom topic /my_pos_vel that prints the distance from the desired position and the average speed of the robot, 
+   using a particular frequency passed as a ROS parameter.
+
+   Parameters:
+   publish_frequency (double)
+
+   Subscribers:
+   /my_pos_vel
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacesubscriber_a73e6c171b5f0a0f02eba4a95f6cb0289}\label{namespacesubscriber_a73e6c171b5f0a0f02eba4a95f6cb0289}} 
+\index{subscriber@{subscriber}!callback@{callback}}
+\index{callback@{callback}!subscriber@{subscriber}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily def subscriber.\+callback (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Callback of the subscriber to the /my_pos_vel custom topic.
+    It computes the distance between the robot and the desired position and the average speed of the robot.
+    
+    Args:
+    msg(My_pos_vel): two variables for the position of the robot (*x* and *y*) and two for the robot's velocities (*vel_x* and *vel_y*) \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacesubscriber_ac222f9b0036b7ead9c5346c9b0eafe50}\label{namespacesubscriber_ac222f9b0036b7ead9c5346c9b0eafe50}} 
+\index{subscriber@{subscriber}!print\_message@{print\_message}}
+\index{print\_message@{print\_message}!subscriber@{subscriber}}
+\doxysubsubsection{\texorpdfstring{print\_message()}{print\_message()}}
+{\footnotesize\ttfamily def subscriber.\+print\+\_\+message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Function that prints the distance from the desired position and the current average speed of the robot.\end{DoxyVerb}
+ 

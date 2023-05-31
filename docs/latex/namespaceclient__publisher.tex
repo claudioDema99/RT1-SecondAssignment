@@ -1,0 +1,105 @@
+\hypertarget{namespaceclient__publisher}{}\doxysection{client\+\_\+publisher Namespace Reference}
+\label{namespaceclient__publisher}\index{client\_publisher@{client\_publisher}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceclient__publisher_a3950ae22437ec3b9bc4a0065346fb36d}{callback\+\_\+and\+\_\+publish}} (msg)
+\item 
+def \mbox{\hyperlink{namespaceclient__publisher_a8e4a5872f4eedfa222cbad5fc36b8c8c}{callback\+\_\+result}} (msg)
+\item 
+def \mbox{\hyperlink{namespaceclient__publisher_ae80f02e80012e6bc6612d6299c1f9d64}{call\+\_\+custom\+\_\+server}} ()
+\item 
+def \mbox{\hyperlink{namespaceclient__publisher_af36ccfd77687c70276db21a02afc9f04}{target\+\_\+goal}} ()
+\item 
+def \mbox{\hyperlink{namespaceclient__publisher_ae8492ebed8728ce3c4be5a715967617c}{client}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceclient__publisher_a6de4d18551e3066025c93e698366f4d2}\label{namespaceclient__publisher_a6de4d18551e3066025c93e698366f4d2}} 
+bool {\bfseries goal\+\_\+reached} = False
+\item 
+\mbox{\Hypertarget{namespaceclient__publisher_ab2e2da9c51719d5c8a7d59a7cf5e274d}\label{namespaceclient__publisher_ab2e2da9c51719d5c8a7d59a7cf5e274d}} 
+{\bfseries publisher} = rospy.\+Publisher(\char`\"{}/my\+\_\+pos\+\_\+vel\char`\"{}, My\+\_\+pos\+\_\+vel, queue\+\_\+size=1)
+\item 
+\mbox{\Hypertarget{namespaceclient__publisher_ad70e45762a19a104352cab94818c513e}\label{namespaceclient__publisher_ad70e45762a19a104352cab94818c513e}} 
+{\bfseries subscriber} = rospy.\+Subscriber(\char`\"{}/odom\char`\"{}, Odometry, \mbox{\hyperlink{namespaceclient__publisher_a3950ae22437ec3b9bc4a0065346fb36d}{callback\+\_\+and\+\_\+publish}})
+\item 
+\mbox{\Hypertarget{namespaceclient__publisher_ad8116ff34f025022c198b378612b68da}\label{namespaceclient__publisher_ad8116ff34f025022c198b378612b68da}} 
+{\bfseries sub\+\_\+result} = rospy.\+Subscriber(\textquotesingle{}/reaching\+\_\+goal/result\textquotesingle{}, assignment\+\_\+2\+\_\+2022.\+msg.\+Planning\+Action\+Result, \mbox{\hyperlink{namespaceclient__publisher_a8e4a5872f4eedfa222cbad5fc36b8c8c}{callback\+\_\+result}})
+\item 
+\mbox{\Hypertarget{namespaceclient__publisher_a9c9449c50b7f94ab60b32e6c7d0969b0}\label{namespaceclient__publisher_a9c9449c50b7f94ab60b32e6c7d0969b0}} 
+{\bfseries file}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: client_publisher
+   :platform: Unix
+   :synopsis: Python node that implements an action client, a publisher and a subscriber.
+   .. moduleauthor:: Claudio Demaria (S5433737)
+
+   This node implements an action client to the /reaching_goal topic in order to use a bug_as alghorithm to reach a desired position inside the environment.
+   To do that, this node needs to subscribe to the /odom topic for knowing the robot current position. This node also publishes the current position and velocity 
+   of the robot with a custom topic named /my_pos_vel. 
+
+   Subscribers:
+   /odom
+   /reaching_goal/result  
+
+   Publishers:
+   /my_pos_vel
+
+   Action clients:
+   /reaching_goal
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceclient__publisher_ae80f02e80012e6bc6612d6299c1f9d64}\label{namespaceclient__publisher_ae80f02e80012e6bc6612d6299c1f9d64}} 
+\index{client\_publisher@{client\_publisher}!call\_custom\_server@{call\_custom\_server}}
+\index{call\_custom\_server@{call\_custom\_server}!client\_publisher@{client\_publisher}}
+\doxysubsubsection{\texorpdfstring{call\_custom\_server()}{call\_custom\_server()}}
+{\footnotesize\ttfamily def client\+\_\+publisher.\+call\+\_\+custom\+\_\+server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function that calls the custom service for printing the number of goal reached and cancelled.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceclient__publisher_a3950ae22437ec3b9bc4a0065346fb36d}\label{namespaceclient__publisher_a3950ae22437ec3b9bc4a0065346fb36d}} 
+\index{client\_publisher@{client\_publisher}!callback\_and\_publish@{callback\_and\_publish}}
+\index{callback\_and\_publish@{callback\_and\_publish}!client\_publisher@{client\_publisher}}
+\doxysubsubsection{\texorpdfstring{callback\_and\_publish()}{callback\_and\_publish()}}
+{\footnotesize\ttfamily def client\+\_\+publisher.\+callback\+\_\+and\+\_\+publish (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Callback of the subscriber to the \odom topic (and it also publish the custom message inside this callback) 
+    
+    Args:
+    msg(Pose): the robot's current position\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceclient__publisher_a8e4a5872f4eedfa222cbad5fc36b8c8c}\label{namespaceclient__publisher_a8e4a5872f4eedfa222cbad5fc36b8c8c}} 
+\index{client\_publisher@{client\_publisher}!callback\_result@{callback\_result}}
+\index{callback\_result@{callback\_result}!client\_publisher@{client\_publisher}}
+\doxysubsubsection{\texorpdfstring{callback\_result()}{callback\_result()}}
+{\footnotesize\ttfamily def client\+\_\+publisher.\+callback\+\_\+result (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Callback of the subscriber to the /reaching_goal/result topic.
+    It set the value of the boolean variable *goal_reached* in order to know that the goal has been reached.
+    
+    Args:
+    msg(PlanningActionResult): the status of the result\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceclient__publisher_ae8492ebed8728ce3c4be5a715967617c}\label{namespaceclient__publisher_ae8492ebed8728ce3c4be5a715967617c}} 
+\index{client\_publisher@{client\_publisher}!client@{client}}
+\index{client@{client}!client\_publisher@{client\_publisher}}
+\doxysubsubsection{\texorpdfstring{client()}{client()}}
+{\footnotesize\ttfamily def client\+\_\+publisher.\+client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Function that creates the action client and calls the function *target_goal* that manages the phases of the program.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceclient__publisher_af36ccfd77687c70276db21a02afc9f04}\label{namespaceclient__publisher_af36ccfd77687c70276db21a02afc9f04}} 
+\index{client\_publisher@{client\_publisher}!target\_goal@{target\_goal}}
+\index{target\_goal@{target\_goal}!client\_publisher@{client\_publisher}}
+\doxysubsubsection{\texorpdfstring{target\_goal()}{target\_goal()}}
+{\footnotesize\ttfamily def client\+\_\+publisher.\+target\+\_\+goal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Function that manages the phases of the program:
+    State 0 - Robot is stopped and waiting for a target goal;
+    State 1 - Robot is reaching the goal and it can be stopped if the user cancel the goal, or the goal can be reached;
+    State 2 - The goal is canceled by the user or is reached by the robot;\end{DoxyVerb}
+ 
